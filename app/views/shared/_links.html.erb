@@ -1,0 +1,8 @@
+<% if session[:user_id] %>
+<%= link_to  "your posts listings" , "/posts" %>
+<%= link_to 'New Post', "/posts/new" %>
+<%= link_to 'Logout', "/users/logout" %>
+<% else %>
+<%= link_to 'Register', "/users/register" %>
+<%= link_to 'Login', "/users/login" %>
+<% end %>

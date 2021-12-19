@@ -1,0 +1,23 @@
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Post</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.user.email %></td>
+        <td><%= post.post %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= render partial: "shared/links" %>

@@ -1,0 +1,29 @@
+<%= form_with(model: post) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+
+  <div class="field">
+    <%= form.label :post %>
+    <%= form.text_area :post, size: "70x5" %>
+  </div>
+  <div class="field">
+  <%= form.label :status %>
+  <%= form.select  :status , options_for_select(Post.statuses.map {|key,| [key.titleize, key]}, post.status) %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

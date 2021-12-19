@@ -1,0 +1,18 @@
+default: &default
+  adapter: mysql2
+  username: 
+  password: 
+  host: 
+  port: 
+
+development:
+  <<: *default
+  database: dev_cocha
+
+test:
+  <<: *default
+  database: test_cocha
+
+production:
+  <<: *default
+  database: cocha

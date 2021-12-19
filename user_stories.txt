@@ -1,0 +1,74 @@
+-Create authentication for the user where user can input email and password--Website Landing Page: 
+-Allow user to login 
+-Allow users to register 
+-Create a user login Page post
+-Create a user registration page
+--After the user logs in, the User is redirected to the homepage 
+-Home page shows a list of Twits user has created 
+-User can see a list of Posts  
+-User can create Post, and edit Post--Create new Post page 
+-User can input a Post with a limit of 255 words. 
+-User can publish a post 
+-User can cancel creating the post--Edit  page 
+-From the homepage, the user can select a Post to edit 
+-User can edit a Published post 
+-User can cancel updating the post--Delete a Post 
+-From the homepage, the user should be able to delete a Post--Challenge: allow the user to make a post-Public or Private 
+-Private post can only be viewed by the owner of the post 
+
+
+user
+ id
+ email
+ password
+ twitter_handle
+
+Posts 
+ user_id
+ post
+ status
+
+ users_controller
+  register
+  login
+  
+  Private
+   - show_twits
+
+ posts_controller
+  index
+  create
+  edit
+  update
+  delete
+  change_post_status
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Suspendisse interdum convallis arcu a laoreet. Morbi mattis 
+ultricies volutpat. Fusce auctor vel arcu a lacinia. Curabitur 
+justo nibh, ultricies eu pharetra vitae, dapibus sed nisi. 
+Proin semper lorem vitae urna tempor iaculis. Nunc varius massa 
+non nisi mollis, sit amet aliquet tortor ullamcorper. Nullam 
+mollis nunc et dui sagittis bibendum id a lorem. In hac habitasse 
+platea dictumst.
+Vestibulum maximus massa id sem mollis, id mattis leo dapibus. 
+Proin sollicitudin diam ac turpis semper, at congue est tincidunt. 
+Pellentesque nec neque interdum, pellentesque lacus vitae, posuere 
+diam. Aenean tortor quam, laoreet id dui eu, rhoncus placerat ex. 
+Suspendisse finibus venenatis convallis. Integer blandit tortor metus, 
+vel vestibulum felis ullamcorper pretium. In quis turpis vitae turpis 
+feugiat aliquet. Pellentesque porttitor molestie ligula et semper. 
+Mauris imperdiet purus at consequat ultrices. Donec malesuada aliquam 
+tempor. Nam tristique lacus non velit semper, id semper ipsum accumsan.
+Suspendisse id risus feugiat, dignissim est sed, lobortis sem. Quisque 
+ac lacinia erat, sed tristique nibh. Maecenas vitae pulvinar velit, vel 
+pretium urna. Nam id nisi auctor, pellentesque eros quis, accumsan purus. 
+Ut a neque nibh. Phasellus semper nisl vel arcu lacinia fringilla. In 
+feugiat dui tellus, ac molestie elit faucibus at.
+Sed velit massa, ultrices ut felis eu, euismod lobortis est. Maecenas 
+in mi cursus, suscipit libero sed, convallis odio. Cras facilisis est 
+dapibus dui euismod, nec semper metus placerat. Proin ut eros est. Fusce 
+in accumsan ligula. Praesent nec blandit leo. Curabitur aliquet turpis 
+vitae eros euismod vulputate. Ut varius ligula nec massa. 
